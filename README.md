@@ -1,2 +1,2 @@
-# KTZ
-admin_panel finder
+# Admin Panel Finder Tool v0.1
+
