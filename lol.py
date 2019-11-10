@@ -39,7 +39,7 @@ print ('\n Scanning ..... ')
 for i in range(len(list)):
         r=requests.get(site+list[i])
         if(r.status_code==200):
-                print ('\n\033[1;32;40m [+]Found[+]',site+list[i])
+                print ('\n\033[32m [+]Found[+]',site+list[i])
 
         else:
-                print ("\n\033[1;31;40m [+]Not Found[+]",site+list[i])
+                print ("\n\033[31m [+]Not Found[+]",site+list[i])
