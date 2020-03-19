@@ -1,6 +1,10 @@
 import requests
-
-print("""\n\033[36m ###############################################
+from colorama import Fore
+from platform import system
+import os
+os.system("clear")
+print(Fore.WHITE)
+print("""\n ###############################################
  #-------------------                          #
  # Developed by KTZ                            #
  #__________________                           #
@@ -15,7 +19,7 @@ print("""\n\033[36m ###############################################
  #            version 0.1                      #
  ###############################################
 """)
-site=input("\n\033[36m Enter Website to scan\n(eg.https://www.google.com/):: ")
+site=input(Fore.WHITE,"\n Enter Website to scan\n(eg.https://www.google.com/):: ")
 list=['login','admin/','administrator/','accounts','admin1/','admin2/','admin3/','admin4/','admin5/','usuarios/','usuario/','administrator/','moderator/','webadmin/','adminarea/','bb-admin/','adminLogin/','admin_area/','panel-administracion/','instadmin/',
 'memberadmin/','administratorlogin/','adm/','admin/account.php','admin/index.php','admin/login.php','admin/admin.php','admin/account.php',
 'admin_area/admin.php','admin_area/login.php','siteadmin/login.php','siteadmin/index.php','siteadmin/login.html','admin/account.html','admin/index.html','admin/login.html','admin/admin.html',
@@ -39,7 +43,7 @@ print ('\n Scanning ..... ')
 for i in range(len(list)):
         r=requests.get(site+list[i])
         if(r.status_code==200):
-                print ('\n\033[32m [+]Found[+]',site+list[i])
+                print (Fore.GREEN,' [+]Found[+]',site+list[i])
 
         else:
-                print ("\n\033[31m [+]Not Found[+]",site+list[i])
+                print (Fore.RED,"\n\033[31m [+]Not Found[+]",site+list[i])
