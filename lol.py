@@ -19,7 +19,7 @@ print("""\n ###############################################
  #            version 0.1                      #
  ###############################################
 """)
-site=input(Fore.WHITE,"\n Enter Website to scan\n(eg.https://www.google.com/):: ")
+site=input("\n Enter Website to scan\n(eg.https://www.google.com/):: ")
 list=['login','admin/','administrator/','accounts','admin1/','admin2/','admin3/','admin4/','admin5/','usuarios/','usuario/','administrator/','moderator/','webadmin/','adminarea/','bb-admin/','adminLogin/','admin_area/','panel-administracion/','instadmin/',
 'memberadmin/','administratorlogin/','adm/','admin/account.php','admin/index.php','admin/login.php','admin/admin.php','admin/account.php',
 'admin_area/admin.php','admin_area/login.php','siteadmin/login.php','siteadmin/index.php','siteadmin/login.html','admin/account.html','admin/index.html','admin/login.html','admin/admin.html',
